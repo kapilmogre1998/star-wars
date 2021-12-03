@@ -1,0 +1,112 @@
+        * {
+
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        }
+        
+        body {
+            background-image: url("https://media4.giphy.com/media/U3qYN8S0j3bpK/giphy.gif?cid=ecf05e47cbav0psq5d0yxgo4mtk0l3a2gnlh5ttk2fzi5fgm&rid=giphy.gif&ct=g");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        /* .img{
+            background-image: url("./image/Star_Wars_Logo.svg.png");
+        } */
+
+        #container {
+            width: 50%;
+            margin: 130px auto;
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            border: 1px solid black;
+            width: 40%;
+            background: black;
+        }
+
+        #inp {
+            margin: auto;
+            width: 68%;
+            background: #2d2f30;
+            border-radius: 20px;
+        }
+
+        #addstyle {
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        #star {
+            width: 85%;
+            height: 40px;
+            background: #2d2f30;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        #hr {
+            width: 90%;
+            margin: 0px auto;
+            display: none;
+        }
+
+        #data {
+            height: 200px;
+            width: 68%;
+            border-top: none;
+            overflow: auto;
+            margin: auto;
+            border: none;
+            background: #2d2f30;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            display: none;
+        }
+
+        #data div {
+            color: white;
+            margin: 40px;
+            margin-top: 20px;
+            text-align: initial;
+            background: #2d2f30;
+        }
+
+        #data div p {
+            background: #2d2f30;
+            margin-top: 3px;
+        }
+
+        #showdata {
+            width: 700px;
+            margin: 10% auto;
+            display: flex;
+            flex-direction: column;
+            color: yellow;
+            text-align: center;
+        }
+
+        #showdata>div {
+            display: flex;
+        }
+
+        .showinfo {
+            width: 300px;
+            height: 200px;
+            border: 1px solid yellow;
+            border-radius: 20px;
+            margin: auto;
+        }
+
+        #btn {
+            color: yellow;
+            background-color: transparent;
+            text-align: center;
+            width: 150px;
+            margin: 50px auto;
+            border: 1px solid yellow;
+            padding: 15px;
+            border-radius: 10px;
+        }

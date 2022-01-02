@@ -1,7 +1,11 @@
 # Star-Wars
 It is a fictional characters of the original film Star Wars franchise created by George Lucas.
 
-## Technology used are
+### Features:
+1. Implemented Debouncing
+2. Fetching star wars characters from API.
+
+### Technology used are
 1. HTML
 2. CSS
 3. Javascript

@@ -1,5 +1,5 @@
 ## Star-War
-It is the ficitonal characters of original film star war.
+It is the ficitonal characters of original film star wars.
 
 ## Feature:
 1. Debouncing in search bar.

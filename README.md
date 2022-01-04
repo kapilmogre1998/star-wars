@@ -1,5 +1,5 @@
 ## Star-Wars
-It is a fictional characters of the original film Star Wars franchise created by George Lucas.
+It is a fictional characters of the original film Star Wars.
 
 ### Features:
 1. Implemented Debouncing in search bar

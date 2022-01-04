@@ -10,4 +10,4 @@ It is a fictional characters of the original film Star Wars franchise created by
 2. CSS
 3. Javascript
 
-#### 👉 [ Click here to see](https://star-wars-kapilmogre1998.vercel.app/)
+#### 👉 [ Click here to see](https://star-wars-bice-seven.vercel.app/)

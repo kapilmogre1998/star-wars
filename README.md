@@ -1,8 +1,8 @@
-# Star-Wars
+## Star-Wars
 It is a fictional characters of the original film Star Wars franchise created by George Lucas.
 
 ### Features:
-1. Implemented Debouncing
+1. Implemented Debouncing in search bar
 2. Fetching star wars characters from API.
 
 ### Technology used are

@@ -1,4 +1,3 @@
-var timeId;
 var getdata = document.getElementById("data");
 
 async function main1(n) {
@@ -11,14 +10,26 @@ async function main() {
     let name = document.getElementById("star").value;
     let data = await main1(name);
     console.log(data);
+    if(data.length === 0){
+        var getdata = document.getElementById("data");
+        getdata.innerHTML = ""
+        getdata.style.display = "none";
+        document.getElementById("hr").style.display = "none";
+        let inpstyle = document.getElementById("inp");
+        inpstyle.style.borderBottomRightRadius = "20px";
+        inpstyle.style.borderBottomLeftRadius = "20px";
+        document.getElementById("search-notfound").style.display = 'block'
+        return;
+    }
     appenddata(data);
 }
 
 function appenddata(d) {
+    document.getElementById("search-notfound").style.display = 'none'
     var getdata = document.getElementById("data");
     //Making getdata div visible
     getdata.style.display = "block";
-
+    
     //Making input div border-radius-bottom 0px;
     let inpstyle = document.getElementById("inp");
     inpstyle.style.borderBottomRightRadius = "0px";
@@ -26,7 +37,7 @@ function appenddata(d) {
 
     //visible horizontal line
     document.getElementById("hr").style.display = "block";
-
+    
     //appending data
     d.forEach(({ name, birth_year, height, gender, eye_color, mass, hair_color }) => {
         var nme = document.createElement("div");
@@ -50,14 +61,12 @@ function appenddata(d) {
         dt.onclick = function () {
             conta.style.display = "none";
             document.getElementById("showdata").style.display = "block";
-
-
+            
+            
             document.getElementById("head").textContent = `${name}`;
             //appending data in personalinfo 
             let personal = document.getElementById("personal");
-            // let nme = document.createElement("h1");
-            //   nme.innerHTML = name;
-
+            
             let personalhead = document.createElement("h2");
             personalhead.innerHTML = `Personal Info`;
             let birth = document.createElement("h4");
@@ -68,7 +77,7 @@ function appenddata(d) {
             hght.innerHTML = `Height: ${height}`;;
             //appending data 
             personal.append(personalhead, birth, gend, hght);
-
+            
             //appending data in personalinfo 
             let anatomy = document.getElementById("anatomy");
             let anatomyhead = document.createElement("h2");
@@ -81,8 +90,8 @@ function appenddata(d) {
             mss.innerHTML = `Mass: ${mass}`;
             //appending data 
             anatomy.append(anatomyhead, eye, mss, hair);
-
-
+            
+            
             //hover Effect
             personal.onmouseover = function () {
                 personal.style.color = "white";
@@ -92,7 +101,7 @@ function appenddata(d) {
                 personal.style.color = "yellow";
                 personal.style.borderColor = "yellow";
             }
-
+            
             anatomy.onmouseover = function () {
                 anatomy.style.color = "white";
                 anatomy.style.borderColor = "white";
@@ -101,7 +110,7 @@ function appenddata(d) {
                 anatomy.style.color = "yellow";
                 anatomy.style.borderColor = "yellow";
             }
-
+            
             let btn = document.getElementById("btn");
             btn.onmouseover = function () {
                 btn.style.color = "white";
@@ -111,12 +120,13 @@ function appenddata(d) {
                 btn.style.color = "yellow";
                 btn.style.borderColor = "yellow";
             }
-
-
+            
+            
         }
+        
     });
     
-
+    
 }
 
 //Go back button
@@ -132,20 +142,22 @@ btn.onclick = function () {
     inpstyle.style.borderBottomRightRadius = "20px";
     inpstyle.style.borderBottomLeftRadius = "20px";
     document.getElementById("hr").style.display = "none";
-
+    
 }
 
 
+let timeId;
 function throttling(func, delay) {
     getdata.innerHTML = "";
     var name = document.getElementById("star");
-
-    if (name.length < 3)
-        return false;
-
+    
+    if (name.length < 2)
+    return false;
+    
     if (timeId)
-        clearTimeout(timeId);
+    clearTimeout(timeId);
 
+    
     timeId = setTimeout(function () {
         func();
     }, delay);

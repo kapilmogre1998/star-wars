@@ -4,29 +4,58 @@
         }
         
         body {
-            background-image: url("https://media4.giphy.com/media/U3qYN8S0j3bpK/giphy.gif?cid=ecf05e47cbav0psq5d0yxgo4mtk0l3a2gnlh5ttk2fzi5fgm&rid=giphy.gif&ct=g");
+            /* background-image: url("https://media4.giphy.com/media/U3qYN8S0j3bpK/giphy.gif?cid=ecf05e47cbav0psq5d0yxgo4mtk0l3a2gnlh5ttk2fzi5fgm&rid=giphy.gif&ct=g"); */
+            background-image: url('./image/HKVW.gif');
             background-size: 100%;
             background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+          }
+           
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+        background-color: rgb(145, 141, 141);
+        outline: 1px solid slategrey;
+        border-radius: 20px;
         }
 
         #container {
             width: 50%;
-            margin: 130px auto;
+            margin: 100px auto;
             text-align: center;
             padding: 10px;
+            /* border: 1px solid red; */
         }
 
-        img {
+        #container>img {
             border: 1px solid black;
-            width: 40%;
+            width: 34%;
             background: black;
+            margin-bottom: 40px;
         }
 
         #inp {
             margin: auto;
-            width: 68%;
+            width: 616px;
             background: #2d2f30;
-            border-radius: 20px;
+            border-radius: 24px;
+            display: flex;
+            justify-content: space-around;
+            padding: 4px 10px;
+        }
+
+        #inp>input{
+            border-radius: 30px;
+            padding: 8px 4px;
+            padding-left: 34px;
+            font-size: 18px;
+            font-weight: bold;
+            /* border: 1px solid red; */
         }
 
         #addstyle {
@@ -44,31 +73,53 @@
             font-size: 15px;
         }
 
+        #search-btn{
+            background-color: rgb(255, 235, 0);
+            border: 0px;
+            border-radius: 24px;
+        }
+
+        #search-btn>img{
+            width: 26px;
+            padding: 4px;
+        }
+
         #hr {
-            width: 90%;
+            width: 634px;
             margin: 0px auto;
             display: none;
         }
 
+        #search-notfound{
+            color: white;
+            display: none;
+        }
+
         #data {
-            height: 200px;
-            width: 68%;
+            height: 220px;
+            width: 636px;
             border-top: none;
-            overflow: auto;
+            overflow-y: auto;
             margin: auto;
             border: none;
             background: #2d2f30;
             border-bottom-right-radius: 20px;
             border-bottom-left-radius: 20px;
             display: none;
+            /* border-bottom: 10px; */
         }
+
 
         #data div {
             color: white;
-            margin: 40px;
-            margin-top: 20px;
+            margin: 20px 40px;
+            /* margin-top: 10px; */
             text-align: initial;
             background: #2d2f30;
+        }
+
+        #data div:nth-child(1){
+            margin-top: 14px;
         }
 
         #data div p {
@@ -78,7 +129,7 @@
 
         #showdata {
             width: 700px;
-            margin: 10% auto;
+            margin: 100px auto;
             display: flex;
             flex-direction: column;
             color: yellow;
@@ -89,12 +140,23 @@
             display: flex;
         }
 
+        #head{
+            font-weight: bold;
+            font-size: 40px;
+        }
+
         .showinfo {
             width: 300px;
             height: 200px;
             border: 1px solid yellow;
             border-radius: 20px;
             margin: auto;
+            font-weight: bolder;
+            margin-top: 20px;
+        }
+
+        .showinfo:hover{
+            margin-top: 1px;
         }
 
         #btn {
@@ -107,3 +169,5 @@
             padding: 15px;
             border-radius: 10px;
         }
+
+        
